@@ -126,5 +126,5 @@ This is a public engineering sample. It is designed to show implementation quali
 
 Jawad Zeineddine  
 Full-Stack Engineer | White-Label Engineering Partner  
-zjawad1999@gmail.com  
+mjawadzeineddine@gmail.com  
 https://github.com/MJszeineddine
