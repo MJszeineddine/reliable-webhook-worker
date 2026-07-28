@@ -1,0 +1,48 @@
+{
+  "name": "reliable-webhook-worker",
+  "version": "1.0.0",
+  "description": "Production-style CRM webhook receiver with HMAC verification, idempotency, BullMQ processing, retries, and safe job status.",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "worker": "tsx src/worker.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "start:worker": "node dist/worker.js",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit.test.ts",
+    "test:integration": "vitest run tests/integration.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "webhooks",
+    "bullmq",
+    "redis",
+    "fastify",
+    "typescript",
+    "idempotency",
+    "background-jobs"
+  ],
+  "author": "Jawad Zeineddine",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/rate-limit": "^10.3.0",
+    "bullmq": "^5.58.0",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "ioredis": "^5.4.2",
+    "pino": "^9.6.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.2.6"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}
