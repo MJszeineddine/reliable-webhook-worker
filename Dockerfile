@@ -4,7 +4,7 @@ COPY package*.json ./
 RUN npm ci
 
 FROM deps AS build
-COPY tsconfig.json eslint.config.js vitest.config.ts ./
+COPY tsconfig.json vitest.config.ts ./
 COPY src ./src
 COPY tests ./tests
 RUN npm run build
