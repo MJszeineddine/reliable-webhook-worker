@@ -6,6 +6,9 @@ This repository demonstrates how Jawad Zeineddine builds reliable event ingestio
 
 No client code, customer data, credentials, or production records are included.
 
+**Need dependable webhooks, APIs or background jobs in your own product?** [Send a scoped engineering brief](https://docs.google.com/forms/d/e/1FAIpQLSeTtJoymcR3Zr4JdVvCq8lY1yuiyp6w_FI_hqiLG6IvEJgqDg/viewform) or [review my wider engineering work](https://mjszeineddine.github.io/). This repository is an open-source demonstration, not a client engagement.
+
+
 ## What It Demonstrates
 
 - Fastify webhook receiver in strict TypeScript
